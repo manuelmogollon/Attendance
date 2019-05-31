@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "628383618694",
+    "firebase_url": "https://asistenciaapp-13eb8.firebaseio.com",
+    "project_id": "asistenciaapp-13eb8",
+    "storage_bucket": "asistenciaapp-13eb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628383618694:android:eb1e695f9f93fef5",
+        "android_client_info": {
+          "package_name": "com.intergrupo.attendanceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628383618694-pev6ooohavcn71f0rumavqjm9odgesvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intergrupo.attendanceapp",
+            "certificate_hash": "a2ab2f9d19a78142b28826f6264d877ee6b1427a"
+          }
+        },
+        {
+          "client_id": "628383618694-sgheho3c7o6uun47l9ffb9d2tkju5r8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intergrupo.attendanceapp",
+            "certificate_hash": "8b9a8d8330098ecf1101647c4c75e04aa9a21174"
+          }
+        },
+        {
+          "client_id": "628383618694-89s3oo5ohiqqg34atkj73srl5qc2s13f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDy6EjR4twT5g4C9r_s71oiA8neVVqvS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628383618694-89s3oo5ohiqqg34atkj73srl5qc2s13f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
