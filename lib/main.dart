@@ -1,6 +1,6 @@
+import 'package:attendance_app/ui/screens/login.dart';
+import 'package:attendance_app/ui/theme.dart';
 import 'package:flutter/material.dart';
-
-import 'login.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,10 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Asistencia',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: buildTheme(),
       home: LogInRoute(title: 'Log In'),
     );
   }

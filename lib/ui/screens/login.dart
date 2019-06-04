@@ -44,23 +44,19 @@ class _LogInRouteState extends State<LogInRoute> {
               children: <Widget>[
                 TextField(
                   controller: userTFController,
-                  style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: "Roboto"),
+                  style: Theme.of(context).textTheme.caption,
                   decoration: InputDecoration(
                       border: InputBorder.none, 
                       hintText: 'Usuario',
-                      contentPadding: EdgeInsets.all(15.0)),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0)),
                 ),
                 TextField(
                   controller: passwordTFController,
-                  style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: "Roboto"),
+                  style: Theme.of(context).textTheme.caption,
                   decoration: InputDecoration(
                       border: InputBorder.none, 
                       hintText: 'Contraseña',
-                      contentPadding: EdgeInsets.all(15.0)),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0)),
                   obscureText: true,
                   inputFormatters: <TextInputFormatter>[
                     LengthLimitingTextInputFormatter(12),
@@ -68,34 +64,19 @@ class _LogInRouteState extends State<LogInRoute> {
                   ],
                 ),
                 MaterialButton(
-                    onPressed: logInPressed,
+                    onPressed: () => logInPressed(),
                     color: Colors.blue,
-                    child: Text("Ingresar",
-                        style: new TextStyle(
-                            fontSize: 20.0,
-                            color: Colors.white,
-                            fontFamily: "Roboto"))),
-                Text("O",
-                    style: new TextStyle(
-                      fontSize: 20.0,
-                      color: Colors.blueGrey,
-                      fontFamily: "Roboto")),
+                    child: Text("Ingresar", style: Theme.of(context).textTheme.button)),
+                SizedBox(height: 48.0),
+                Text("O", style: Theme.of(context).textTheme.caption),
                 MaterialButton(
-                    onPressed: microsoftLogIn,
+                    onPressed: () => microsoftLogIn(),
                     color: Colors.blueGrey,
-                    child: Text("Microsoft",
-                        style: new TextStyle(
-                            fontSize: 20.0,
-                            color: Colors.white,
-                            fontFamily: "Roboto"))),
+                    child: Text("Microsoft", style: Theme.of(context).textTheme.button)),
                 MaterialButton(
                     onPressed: () => googleSignIn(context),
                     color: Colors.blueGrey,
-                    child: Text("Google",
-                        style: new TextStyle(
-                            fontSize: 20.0,
-                            color: Colors.white,
-                            fontFamily: "Roboto"))),
+                    child: Text("Google", style: Theme.of(context).textTheme.button)),
               ])),
     );
   }

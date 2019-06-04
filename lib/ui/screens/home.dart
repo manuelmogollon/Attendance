@@ -19,11 +19,7 @@ class HomeRoute extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text('Bienvenido ' + user,
-              style: TextStyle(
-                fontSize: 20,
-                fontFamily: "Roboto"
-                )),
+            Text('Bienvenido ' + user, style: Theme.of(context).textTheme.caption),
             MaterialButton(
               color: Colors.blue,
               onPressed: () {
@@ -33,12 +29,7 @@ class HomeRoute extends StatelessWidget {
                 }
                 Navigator.pop(context);
               },
-              child: Text('Cerrar Sesión',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    fontFamily: "Roboto",
-                  )),
+              child: Text('Cerrar Sesión', style: Theme.of(context).textTheme.button),
             )
           ], 
         ),  
