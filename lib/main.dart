@@ -243,7 +243,7 @@ class HomeRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
-        automaticallyImplyLeading: false,
+        //automaticallyImplyLeading: false,
       ),
       body: Center (
         child: Column(
