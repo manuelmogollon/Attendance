@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Asistencia',
       theme: buildTheme(),
-      home: LogInRoute(title: 'Log In'),
+      home: LogInRoute(),
     );
   }
 }

@@ -8,10 +8,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'home.dart';
 
 class LogInRoute extends StatefulWidget {
-  LogInRoute({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _LogInRouteState createState() => _LogInRouteState();
 }
@@ -34,7 +30,7 @@ class _LogInRouteState extends State<LogInRoute> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Log In"),
       ),
       body: Center(
           child: Column(
